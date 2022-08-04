@@ -5,6 +5,7 @@
 * Queue
 * Hash Table
 * Trees
+* Heaps
 * Graphs
 * Dynamic programming
 * Recursion
