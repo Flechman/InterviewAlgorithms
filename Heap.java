@@ -32,6 +32,7 @@ public class Heap {
   }
 
   public int maxHeapRemoveMax() {
+    maxHeapify(0);
     int max = maxHeapMax();
     arr.set(0, arr.get(arr.size()-1));
     arr.remove(arr.size()-1); //O(1) when index is last element
@@ -40,6 +41,7 @@ public class Heap {
   }
 
   public int minHeapRemoveMin() {
+    minHeapify(0);
     int min = minHeapMin();
     arr.set(0, arr.get(arr.size() - 1));
     arr.remove(arr.size() - 1); // O(1) when index is last element
